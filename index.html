@@ -6,7 +6,6 @@
 		<meta property="og:description" content="My passion is to find solutions in order to solve daily repetitive problems. It turns out that coding is the best way to do so, that's why I became a computer science developer!">
 		<meta property="og:image" content="https://simo6.github.io/images/homeImage.png">
 		<meta property="og:url" content="https://simo6.github.io/">
-		
 		<!-- Meta tag -->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,28 +14,75 @@
 		<meta name="generator" content="Hugo 0.88.1">
 		<meta name="theme-color" content="#7952b3">
 		<meta itemprop="image" content="images/homeImage.png">
-		
 		<!-- Website title -->
 		<title>Simone Bartoli</title>
-
 		<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
-
 		<!-- Bootstrap core CSS -->
 		<link href="./css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
 		<!-- Favicons -->
 		<link rel="manifest" href="manifest.json">
 		<link rel="mask-icon" href="favicon.ico">
 		<link rel="shortcut icon" href="favicon.ico" />
 
 		<style>
-		  .bd-placeholder-img {
-			font-size: 1.125rem;
-			text-anchor: middle;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			user-select: none;
-		  }
+			.bd-placeholder-img {
+				font-size: 1.125rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+			}
+
+			.roundedCorner {
+				width:350px;height:200px;
+				border: solid 1px #f5f5f5;
+				box-shadow: 10px -10px 10px  #0000002f;
+				-webkit-box-shadow: 10px -10px 10px  #0000002f;
+				-o-box-shadow: 10px -10px 10px  rgba(0,0,0,0.6);
+				border-radius:25px;
+			}
+
+			.my-nav-color{
+				color: #947458;
+			}
+
+			.my-nav-color:hover{
+				color: #554334;
+			}
+
+			.my-link-color{
+				color: #f5f5f5;
+			}
+
+			.my-link-color:hover{
+				color: #554334;
+			}
+
+			.my-nav-button{
+				background-color: #947458;
+				border-radius:5px;
+				color: #f5f5f5;
+			}
+
+			.my-nav-button:hover{
+				background-color: #554334;
+				border-radius:5px;
+				color: #f5f5f5;
+			}
+
+			.my-main-background {
+				background-color: #947458;
+			}
+
+			.header-logo {
+				font-size: x-large;
+				margin-bottom: 0px;
+				text-shadow: 1px 1px #947458;
+			}
+
+			.header-logo-capital {
+				color:#947458
+			}
 
 		  @media (min-width: 768px) {
 			.bd-placeholder-img-lg {
@@ -44,39 +90,25 @@
 			}
 		  }
 		</style>
-
 		<!-- Custom styles -->
 		<link href="./css/cover.css" rel="stylesheet">
-
-		<!-- ThreeJS -->
-		<!--
-		<script src='threejs/three.min_r96.js'></script>
-		<script src='threejs/OrbitControls.js'></script>
-		<script src='threejs/Tween.js'></script>
-		<script src="threejs/Coordinates.js"></script>
-		<script src="threejs/dat.gui.min.js"></script>
-		-->
 	</head>
 	<body class="d-flex text-center">
-    
 		<div class="container-xl">
 			<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
 				<a href="http://simo6.github.io/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-					<img class="d-block mx-auto" src="images/imgHomeTitle.png" alt="Simone Bartoli Home" height="40" width="190" style="max-width:100%; height:auto; margin-bottom:0;">
+					<p class="header-logo"><span class="header-logo-capital">S</span>imone <span class="header-logo-capital">B</span>artoli</p>
 				</a>
-			
-				<ul class="nav nav-pills">
-					<li class="nav-item"><a href="?/#Home" class="nav-link" aria-current="page">Home</a></li>
-					<li class="nav-item"><a href="?/#Portfolio" class="nav-link">Portfolio</a></li>
-					<li class="nav-item"><a href="sources/CV_Simone_Bartoli.pdf" download="CV_Simone_Bartoli" class="nav-link active">Curriculum</a></li>
+				<ul class="nav">
+					<li class="nav-item"><a href="?/#Home" class="nav-link my-nav-color" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="?/#Portfolio" class="nav-link my-nav-color">Portfolio</a></li>
+					<li class="nav-item"><a href="sources/CV_Simone_Bartoli.pdf" download="CV_Simone_Bartoli" class="nav-link my-nav-button">Curriculum</a></li>
 				</ul>
 			</header>
-
 		  	<main class="px-3">
-
 				<div id="Home" class="px-4 text-center container-lg" style="margin-bottom: 3em !important;">
 					<div style="max-width:100%; height:auto;">
-						<img class="d-block mx-auto mb-4 " src="images/homeImage.gif" alt="" widht="450" height="450" style="max-width:100%; height:auto;">
+						<img class="d-block mx-auto mb-4 roundedCorner" src="images/profileImage.png" alt="" widht="450" height="450" style="max-width:100%; height:auto;">
 					</div>
 					<h1 class="display-5 fw-bold">Simone Bartoli</h1>
 					<div class="col-lg-6 mx-auto">
@@ -164,7 +196,7 @@
 									<li class="list-group-item">PyTorch, OpenCV, Numpy, MatplotLib, Open3D</li>
 								</ul>
 							  </div>
-							  <div class="card-body main-background">
+							  <div class="card-body my-main-background">
 								<span class="card-link link-text-style">Protected by Non-Disclosure-Agreement</span>
 							  </div>
 						</div>
@@ -181,7 +213,7 @@
 								  <li class="list-group-item">OpenCV, Numpy, Colmap, OpenMVS, MatplotLib, Open3D</li>
 								</ul>
 							  </div>
-							  <div class="card-body main-background">
+							  <div class="card-body my-main-background">
 								<span class="card-link link-text-style">Protected by Non-Disclosure-Agreement</span>
 							  </div>
 						</div>
@@ -199,7 +231,7 @@
 								  <li class="list-group-item">Unreal Engine 4, C++</li>
 								  <li class="list-group-item">FunctionWaveCollapse</li>
 								</ul>
-								<div class="card-body main-background">
+								<div class="card-body my-main-background">
 									<span class="card-link link-text-style">Protected by Non-Disclosure-Agreement</span>
 								</div>
 							  </div>
@@ -216,8 +248,8 @@
 								  <li class="list-group-item">Python</li>
 								  <li class="list-group-item">OpenCV, Numpy</li>
 								</ul>
-								<div class="card-body main-background">
-								  <a href="https://github.com/simo6/AugmentedRealityProject#readme" class="card-link link-text-style">Project link</a>
+								<div class="card-body my-main-background">
+								  <a href="https://github.com/simo6/AugmentedRealityProject#readme" class="card-link link-text-style my-link-color">Project link</a>
 								</div>
 							  </div>
 						</div>
@@ -235,8 +267,8 @@
 								  <li class="list-group-item">Unity framework, C#</li>
 								  <li class="list-group-item">Google AR Core</li>
 								</ul>
-								<div class="card-body main-background">
-								  <a href="https://github.com/simo6/ArtigianaudioAppAR#readme" class="card-link link-text-style">Project link</a>
+								<div class="card-body my-main-background">
+								  <a href="https://github.com/simo6/ArtigianaudioAppAR#readme" class="card-link link-text-style my-link-color">Project link</a>
 								</div>
 							  </div>
 						</div>
@@ -252,8 +284,8 @@
 									<li class="list-group-item">HTML, CSS, JavaScript, PHP, SQL</li>
 									<li class="list-group-item">Bootstrap, JQuery</li>
 								</ul>
-								<div class="card-body main-background">
-									<a href="https://www.artigianaudio.it/" class="card-link link-text-style">Website Link</a>
+								<div class="card-body my-main-background">
+									<a href="https://www.artigianaudio.it/" class="card-link link-text-style my-link-color">Website Link</a>
 								</div>
 							</div>
 						</div>
@@ -272,8 +304,8 @@
 									<li class="list-group-item">Java</li>
 									<li class="list-group-item">AIMA</li>
 								</ul>
-								<div class="card-body main-background">
-									<a href="https://github.com/bolopenguin/AI_Tablut_Player" class="card-link link-text-style">Project link</a>
+								<div class="card-body my-main-background">
+									<a href="https://github.com/bolopenguin/AI_Tablut_Player" class="card-link link-text-style my-link-color">Project link</a>
 								</div>
 								</div>
 						</div>
